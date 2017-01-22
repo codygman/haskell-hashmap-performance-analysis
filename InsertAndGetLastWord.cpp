@@ -19,14 +19,13 @@ int main() {
       break;
       }
     Words[line] = 0;
-    // std::cout << line << std::endl;
     i++;
   }
 
 
   std::map<std::string, int>::iterator it;
   if((it = Words.find("'ll")) != Words.end())
-    std::cout << it->first<<" =>"<< it->second << '\n';
+    std::cout << it->second << '\n';
 
 
   return 0;
